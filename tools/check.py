@@ -36,9 +36,10 @@ def est_height(tf, box_w):
     total = 0.0
     for p in tf.paragraphs:
         sizes = [r.font.size.pt for r in p.runs if r.font.size] or [18]
-        size = max(sizes)
+        size = max(sizes)  # 行高取本段最大字号
         text = "".join(r.text for r in p.runs)
-        width_pt = sum(char_w(c, size) for c in text)
+        # 字宽按每个 run 自己的字号算（大数字 + 小单位不会被高估）
+        width_pt = sum(char_w(c, r.font.size.pt if r.font.size else size) for r in p.runs for c in r.text)
         lines = max(1, math.ceil(width_pt / 72 / max(box_w, 0.1)))
         # 软换行 \v 也算一行
         lines += text.count("\v")

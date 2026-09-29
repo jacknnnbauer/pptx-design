@@ -18,7 +18,6 @@ const { pres, C, F, NUM } = K;
   const s = K.addSlide();
   s.background = { color: "FBF8F1" };
   s.addShape(pres.shapes.RECTANGLE, { x: 0, y: 0, w: 0.22, h: 7.5, fill: { color: C.amber }, line: { color: C.amber } });
-  s.addShape(pres.shapes.RECTANGLE, { x: 0, y: 6.95, w: 13.333, h: 0.55, fill: { color: "F1EADB" }, line: { color: "F1EADB" } });
   s.addImage({ path: IMG("cover_outline.png"), x: 5.55, y: 3.75, w: 7.3, h: 7.3 * 940 / 2300 });
   s.addShape(pres.shapes.RECTANGLE, { x: 0.75, y: 1.35, w: 0.9, h: 0.08, fill: { color: C.amber }, line: { color: C.amber } });
   s.addText("云栖书店 · 滨江旗舰店（YQ-01）", { x: 0.75, y: 1.6, w: 9, h: 0.45, fontFace: F,
