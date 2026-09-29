@@ -1,0 +1,16 @@
+{
+  "name": "pptx-design",
+  "version": "1.0.0",
+  "description": "用代码生成中文汇报型 PPT：一套设计系统 + 19 种版式 + 出片自检",
+  "main": "lib/kit.js",
+  "scripts": {
+    "example": "node examples/bookstore/build.js",
+    "check": "python tools/check.py examples/bookstore/云栖书店_旗舰店开业方案汇报.pptx"
+  },
+  "keywords": ["pptx", "powerpoint", "pptxgenjs", "presentation", "chinese", "report"],
+  "author": "jacknnnbauer",
+  "license": "MIT",
+  "dependencies": {
+    "pptxgenjs": "^4.0.1"
+  }
+}

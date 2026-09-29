@@ -1,0 +1,19 @@
+# Node
+node_modules/
+package-lock.json
+
+# Python
+__pycache__/
+*.py[cod]
+
+# 截图中间产物（export_png.ps1 默认输出到 deck 同目录的 shots/）
+shots/
+_sheet_*.png
+
+# Office 打开时的锁文件
+~$*.pptx
+
+# 系统
+Thumbs.db
+desktop.ini
+.DS_Store

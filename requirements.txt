@@ -1,0 +1,4 @@
+# 只有 tools/ 和示例配图需要 Python；只生成 PPT 的话不用装
+python-pptx>=1.0
+Pillow>=10.0
+matplotlib>=3.8
